@@ -1,0 +1,148 @@
+/*
+ * This is the class reperesenting the user interface for the whole game
+ */
+class ChickenMazeGame {
+
+  field Game game;
+  field int counter;
+  field boolean handled;
+  field char lastKey;
+  field String START_LEVEL;
+  field String GAME_OVER;
+  field String PAUSE;
+  field String TITLE;
+  field String PRESS_A_KEY;
+  field String INFO;
+  field String LEVEL;
+  field String SCORE;
+
+
+  constructor ChickenMazeGame new() {
+    let counter = 0;
+    let handled = false;
+    let START_LEVEL = "GET READY!";
+    let PAUSE = "PAUSE";
+    let GAME_OVER = "GAME OVER!";
+    let TITLE = "CHICKEN MAZE";
+    let PRESS_A_KEY = "PRESS A KEY!";
+    let INFO = "HAVE FUN!";
+    let LEVEL = "Level:";
+    let SCORE = "SCORE:";
+
+    let game = Game.new();
+    return this;
+  }
+  /**
+   *  This is the game loop,
+   */
+  method void run() {
+    var char c; 
+    var boolean exit;
+    let exit = false;
+
+    while (~exit) {
+      while (c = 0) {
+        let c = Keyboard.keyPressed();
+        do handleState();
+      }
+      do keyPressed(c);
+      let lastKey = c;
+      if (c = 81) { //q pressed
+        let exit = true;
+      }
+      let c = 0;
+      do Sys.wait(100);
+      //do Screen.clearScreen();
+    } //while
+    return;
+  }
+  /**
+   *  State machine
+   * Here's what I want it to do:
+   * - at START: draw the start screen
+   * - at PLAY: Draw the game
+   * - at PAUSE: Draw the game in pause mode
+   *   additionally draw a text "PAUSE" in the middle of the screen
+   * - for NEWLEVEL: draw a message Level+x for the new level x
+   *  Additionally: Wait until one second has passed, then set the state of the game
+   *  on PLAY. Use the new variables with Waiting in the name.
+   *  For GAMEOVER: Draw a message "GAME OVER". 
+   *  - Wait an additional second and then set the state to START
+
+Translated with www.DeepL.com/Translator (free version)
+*/
+  method void handleState() {
+      if (game.getGameState() = Game.START()) {
+        if (~handled) {
+          let handled = true;
+          do Screen.clearScreen();
+          do Screens.drawStartScreen(TITLE, PRESS_A_KEY, INFO, 12, 12, 8);
+        }
+      }
+      if (game.getGameState() = Game.PLAY()) {
+        do game.draw();
+      }
+      if (game.getGameState() = Game.PAUSE()) {
+          do game.doPause();
+          do Screen.setColor(true);
+          do Output.moveCursor(3,5);
+          do Output.printString(PAUSE);
+      }
+      if (game.getGameState() = Game.NEWLEVEL()) {
+        do Screen.clearScreen();
+        do Screens.drawMessage(START_LEVEL, LEVEL, 10, 6, game.getLevel() + 1);
+        do Sys.wait(1000);
+        do Screen.clearScreen();
+        do game.setGameState(Game.PLAY());
+        
+      }
+      if (game.getGameState() = Game.GAMEOVER()) {
+        do Screen.clearScreen();
+        do Screens.drawMessage(GAME_OVER, SCORE, 10, 6, game.getScore());
+        do Sys.wait(1000);
+        let handled = false;
+        do game.setGameState(Game.START());
+      }
+      return;
+  }
+
+  /**
+   * change state from keys
+   * A "switch-case" for for checking the status
+   * When a key is pressed and the state is:
+   * START: Should it be set to PLAY.
+   * PLAY: Shall the move method of the game be called
+   * - But if the key is 'p', the state should be changed to PAUSE
+   * PAUSE: The status is to be changed to PLAY.
+   * NEWLEVEL: Is changed in the game itself, has nothing to do with the user interface.
+   * GAMEOVER: Will also be changed in the game, no UI operation.
+   */
+  method void keyPressed(char keyCode) {
+    // simulate switch- case
+    var boolean handle;
+    let handle = false;
+    if (~handle & (game.getGameState() = Game.START())) {
+      let handle = true;
+      let handled = false;
+      do game.setGameState(Game.NEWLEVEL());
+      
+    } 
+    if (~handle & (game.getGameState() = Game.PLAY())) {
+      do game.move(keyCode);
+      if (keyCode = 80 & ~(lastKey = 80)) { // P-Key
+        do game.setGameState(Game.PAUSE());
+        let handle = true;
+      }
+    } 
+    if (~handle & (game.getGameState() = Game.PAUSE()) & ~(keyCode = 80)) {
+      do game.setGameState(Game.PLAY());
+    }
+    return;
+  }
+
+  method void dispose() {
+      do game.dispose();
+      do Memory.deAlloc(this);
+      return;
+   }
+}

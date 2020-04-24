@@ -1,0 +1,115 @@
+/**
+ * Code for chicken
+ * it shall have:
+ * one position on the grid, two directions
+ * (horizontal / vertical) integers
+ */
+class Chicken {
+
+  field int xpos;
+  field int ypos;
+  field boolean leftFoot;
+  field int xinit;
+  field int yinit;
+
+  method boolean isLeftFoot() {
+    return leftFoot;
+  }
+
+  /**
+   * Getters, setters
+   */
+  method int getXpos() {
+    return xpos;
+  }
+  method int getYpos() {
+    return ypos;
+  }
+  function int UP() {
+    return 1;
+  }
+  function int DOWN() {
+    return 2;
+  }
+  function int LEFT() {
+    return 3;
+  }
+  function int RIGHT() {
+    return 4;
+  }
+  /** 
+  * Creates chicken cbject
+  * additionally initialize the new variables xinit and yinit 
+  * with the potition parameters.
+  */
+  constructor Chicken new (int xp, int yp) {
+    let xpos = 0;
+    let ypos = 0;
+    let xpos = xpos + xp;
+    let ypos = ypos + yp;
+    let xinit = xpos;
+    let yinit = ypos;
+    let leftFoot = true;
+    return this;
+  }
+  /**
+   * The method reset(), can be called to reset the position 
+   * of the chicken to the start position
+   */
+  method void reset() {
+    let xpos = xinit;
+    let ypos = yinit;
+    return;
+  }
+
+  /*
+   * A method that maps the image to 
+   * the corresponding position in the grid.
+   * See assets
+   */
+  method void draw() {
+    do Assets.chicken(leftFoot, xpos, ypos);
+    return;
+  }
+  
+  /*
+   * A method that moves the chicken in the appropriate direction
+   *  
+   * Test, whether the planned position is an obstacle (wall)
+   * If so, do not make the movement
+   * 
+   * Select a picture with a different leg position, 
+   * so that the chicken can walk
+   * Invert the variable leftFoot after every step.
+   */
+  method void move(int dir, Maze m) {
+    let leftFoot = ~leftFoot;
+
+    if (dir = Chicken.UP()) {
+      if (~m.isObstacle(xpos, ypos - 1)) {
+        let ypos = ypos - 1;
+      }
+    }
+    if (dir = Chicken.DOWN()) {
+      if (~m.isObstacle(xpos, ypos + 1)) {
+        let ypos = ypos + 1;
+      }
+    }
+    if (dir = Chicken.LEFT()) {
+      if (~m.isObstacle(xpos - 1, ypos)) {
+        let xpos = xpos - 1;
+      }
+    }
+    if (dir = Chicken.RIGHT()) {
+      if (~m.isObstacle(xpos + 1, ypos)) {
+        let xpos = xpos + 1;
+      }
+    }
+    return;
+  }
+
+  method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+   }
+}

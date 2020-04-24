@@ -1,0 +1,279 @@
+/*
+ * This is the class reperesenting the running game
+ *
+ *   Let the game have:
+ *   - a maze object
+ *   - a chicken
+ *   - Enemies
+ *   - the score
+ *   - a number for the level
+ *   - Upper limits (Max. level, Max. life)
+ *   Give the game a state
+ */
+
+class Game {
+
+  field Maze maze;
+  field Chicken chicken;
+  field Array enemies;
+  field int level, maxLevel, lives, maxLives, score;
+  field int gamesState;
+  field String SCORE;
+  field String LIVES;
+  field int lastScore;
+  field Tools tools;
+
+  /**
+   * Constructs a running game
+   */
+  constructor Game new() {
+    let SCORE = "SCORE";
+    let LIVES = "LIVES";
+    let tools = Tools.new();
+    do setGameState(Game.START());
+    do init();
+    return this; 
+  }
+
+  /**
+   * Getter-Setter
+   */
+  method void setGameState(int st) {
+    let gamesState = st;
+    return;
+  }
+
+  method int getGameState() {
+    return gamesState;
+  }
+
+  method int getLevel() {
+    return level;
+  }
+
+  method int getScore() {
+    return lastScore;
+  }
+  
+  /**
+   * Constants
+   */
+  function int START() {
+    return 1;
+  }
+  function int PLAY() {
+    return 2;
+  }
+  function int PAUSE() {
+    return 3;
+  }
+  function int NEWLEVEL() {
+    return 4;
+  }
+  function int GAMEOVER() {
+    return 5;
+  }
+
+/**
+ * This function is to create a new maze and all stuff inside the level:
+ * In the constructor of the Game the maze is selected depending on the level number.
+ * The same applies to the tile map for the grains.
+ * These are eaten in the course of the game and
+ * are to be back for a new game
+ *  - In addition, the enemies should be initialized.
+ * Initialize each enemy with the length of the enemy position of the current level.
+ * For each place in the array, create a new enemy at the corresponding position.
+ */
+  method void createLevel() {
+    var int j, xp, yp;
+    var Array pos;
+    let maze = Maze.new(level);
+    let enemies = Array.new(Assets.enemyCount(level));
+    let j = 0;
+    let pos = Assets.enemyPositions(level);
+    while (j < Assets.enemyCount(level)) {
+      let xp = pos[j * 2];
+      let yp = pos[(j * 2) + 1];
+      let enemies[j] = Enemy.new(xp, yp);
+      let j = j + 1;
+    }
+    return;
+  }
+  /**
+   *  Here, all other variables are  provided with meaningful start values,
+   *  a chicken will be created (starting point 1/1)
+   *  and then createLevel() be called.  
+   */
+  method void init() {
+    let level = 0;
+    let maxLevel = 2;
+    let maxLives = 3;
+    let lives = maxLives;
+    let score = 0;
+    let chicken = Chicken.new (1, 1);
+    do createLevel();
+    return;
+  }
+  /**
+   * This method releases all unused memory
+   */
+  method void disposeAll(){
+      // Memory management
+      var int j;
+      var Enemy enemy;
+      let j = Assets.enemyCount(level);
+      while (j > 0) {
+        let j = j - 1;
+        let enemy = enemies[j];
+        do enemy.dispose();
+      }
+      do enemies.dispose();
+      do maze.dispose();
+      return;
+  }
+
+  /**
+    * The method draw() shall:
+    * - draw the labyrinth
+    * - drawing the chicken
+    * - Update and draw the enemy
+    * - When the chicken is arrived at the bottom right corner (position MAZEWIDTH-2 / MAZEHEIGHT-1)
+    *   one should get to the next level.
+    * - When the maximum levels (0-3) is reached, start again from the beginning.
+    * - You always have to call createLevel(), so that new mazes and
+    *   an enemy can be created according to the current level.
+    * - If the chicken's position coincides with the enemy's position, the chicken will die.
+    *  - The lives are then reduced by one, the position of the chicken and the enemy are reset.
+    *  - When the lives are used up, init() is called again and the game starts again.
+    * When changing levels, the enemy does not need to be reset
+    * While inside a running game, the method calls for each enemy in the level 
+    * - update() and draw().
+    * - Now check for each enemy if they are at the chicken position
+    * - If yes, and not yet game-over, reset all enemies
+    * Change the GameState if:
+    * - the level changes 
+    * - If the chicken is dead: Game-Over 
+    * Call the method for score drawing
+    */
+  method void draw() {
+    var int j;
+    var int j2;
+    var Enemy enemy;
+    var Chicken chk;
+    var int cnt;
+    var boolean brk;
+    do maze.draw(chicken, enemies);
+    do chicken.draw();
+    if ((chicken.getXpos() = (Assets.MAZEWIDTH() - 2)) & (chicken.getYpos() = (Assets.MAZEHEIGHT() - 1))) {
+      do disposeAll();
+      let level = level + 1;
+      if (level > maxLevel) {
+        let level = 0;
+      }      
+      do createLevel();
+      do chicken.reset();
+      do setGameState(Game.NEWLEVEL());
+      return;
+    }
+    
+    let cnt = Assets.enemyCount(level);
+    let j = 0;
+    let brk = false;
+    while ((j < cnt) & ~brk) {
+      let enemy = enemies[j];
+      do enemy.update(maze, tools);
+      do enemy.draw();
+      if ((chicken.getXpos() = enemy.getXpos()) & (chicken.getYpos() = enemy.getYpos())) {
+        let lives = lives - 1;
+        if (lives = 0) {
+          let brk = true;
+          let lastScore = score;
+          do disposeAll();
+          do chicken.dispose();
+          do init();
+          do setGameState(Game.GAMEOVER());
+        } else {
+          do setGameState(Game.NEWLEVEL());
+          do chicken.reset();
+          let j2  = 0;
+          while (j2 < cnt) {
+            let enemy = enemies[j2];
+            do enemy.reset();
+            let j2 = j2 + 1;
+          }
+        }
+      }
+      let j = j + 1;
+    }
+    do drawScore();
+    return;
+  }
+
+  /**
+   * Displays score and lives
+   */
+  method void drawScore() {
+    do Screen.setColor(true);
+    do Output.moveCursor(1,3);
+    do Output.printString(SCORE);
+    do Output.moveCursor(1,9);
+    do Output.printInt(score);
+
+    do Output.moveCursor(1,53);
+    do Output.printString(LIVES);
+    do Output.moveCursor(1,59);
+    do Output.printInt(lives);
+    return;
+  }
+  /**
+   * pause() draws everything, but no animation
+   */
+  method void doPause() {
+    var int cnt;
+    var int j;
+    var Enemy enemy;
+
+    do maze.draw(chicken, enemies);
+    do chicken.draw();
+    let cnt =  Assets.enemyCount(level);
+    let j = 0;
+    while (j < cnt) {
+      let enemy = enemies[j];
+      do enemy.draw();
+      let j = j + 1;
+    }
+    do drawScore();
+    return;
+  }
+  /**
+   * move(...) gets the key-codes from the main file and moves the chicken.
+   */
+  method void move(char keyC) {
+    if (keyC = 131) {
+      do chicken.move(Chicken.UP(), maze);
+    }
+    if (keyC = 133) {
+      do chicken.move(Chicken.DOWN(), maze);
+    }
+    if (keyC = 130) {
+      do chicken.move(Chicken.LEFT(), maze);
+    }
+    if (keyC = 132) {
+      do chicken.move(Chicken.RIGHT(), maze);
+    }
+
+    if (maze.isGrain(chicken.getXpos(), chicken.getYpos())) {
+      let score = score + 1;
+    }
+    return;
+  }
+
+  method void dispose() {
+      do maze.dispose();
+      do chicken.dispose();
+      do enemies.dispose();
+      do tools.dispose();
+      do Memory.deAlloc(this);
+      return;
+   }
+}

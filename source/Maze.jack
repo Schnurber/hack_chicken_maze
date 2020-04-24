@@ -1,0 +1,104 @@
+ /** The Maze class stands for any labyrinth
+  *  It should have:
+  *  - The images for the individual grid positions
+  *  - An array with the image numbers for the maze and grain
+  */
+class Maze {
+
+  field Array tileMap;
+  field Array tileGrain;
+  field int level;
+  
+  /**
+   * Constructs a new maze for a single level
+   */
+  constructor Maze new(int thisLevel) {
+    let level = thisLevel;
+    let tileMap = Assets.tileMap(level);
+    let tileGrain = Assets.tileGrain(level);
+    let level = thisLevel;
+    return this;
+  }
+
+  /**
+   * The method that draws the labyrinth
+   * All tiles of the labyrinth are numbered.
+   * At the tileMap position n the corresponding image x is drawn,
+   * where x = tilemap[n]
+   * whenever a line with the length MAZEWIDTH is drawn
+   * a new line is drawn (MAZEHEIGHT lines)
+   */
+  method void draw(Chicken chicken, Array enemies) {
+    var int i, j, nr1, nr2, x;
+    var Enemy en;
+    var Chicken ch;
+    var boolean ok;
+    let i = 0;
+    while (i < Assets.MAZEWIDTH()) {
+      let j = 0;
+      while (j < Assets.MAZEHEIGHT()) {
+        //check, if there are enemies or chicken 
+        let ok = true;
+        if ((chicken.getXpos()) = i & (chicken.getYpos() = j) ) {
+          let ok = false;
+        }
+        let x = 0;
+        while (x < Assets.enemyCount(level)) {
+          let en = enemies[x];
+          if ((en.getXpos()) = i & (en.getYpos() = j) ) {
+            let ok = false;
+          }
+          let x = x + 1;
+        }
+        let nr1 = tileMap[i + (j * Assets.MAZEWIDTH())];
+        let nr2 = tileGrain[i + (j * Assets.MAZEWIDTH())] ;
+        if (ok & (nr2 = -1)) { // no grain
+          do Assets.tiles(nr1, i, j);
+        }
+        if ((nr2 > -1) & ok) {
+          do Assets.grain(nr2, i, j);
+        }
+        let j = j + 1;
+      }
+      let i = i + 1;
+    }
+    return;
+  }
+
+  /**
+   *A method that tests whether there is an obstacle at position (h / v )
+   * so whether the corresponding number in the tileMap is not a ground.
+   */
+  method boolean isObstacle(int i, int j) {
+    var int nr, tileNr;
+    if ((i < 0) | (i > (Assets.MAZEWIDTH() -1))  |
+        (j < 0) | (j > (Assets.MAZEHEIGHT() -1))) {
+      return true;
+    }
+    let tileNr = i + (j * Assets.MAZEWIDTH());
+    let nr = tileMap[tileNr];
+    
+    return nr > 3;
+  }
+  /**
+   * This method should check whether there is a grain at position (i,j) and return true or false. 
+   * In addition, the corresponding grain should disappear (= be eaten)
+   * Therefore overwrite the image number with -1
+   */
+  method boolean isGrain(int i, int j) {
+    var int nr;
+    let nr = i + (j * Assets.MAZEWIDTH());
+    if (tileGrain[nr] > -1) {
+      let tileGrain[nr] = -1;
+      return true;
+    } else {
+      return false;
+    }
+  }
+  method void dispose() {
+      do tileMap.dispose();
+      do tileGrain.dispose();
+      do Memory.deAlloc(this);
+      return;
+   }
+}

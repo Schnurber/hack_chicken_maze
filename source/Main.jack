@@ -1,0 +1,15 @@
+/**
+ * Chicken Maze for the hack platform
+ * (c) 2020 by Dieter Meiller dieter.meiller@gmx.de
+ */
+
+/** Starts the whole game. */
+class Main {
+    function void main() {
+        var ChickenMazeGame game;
+        let game = ChickenMazeGame.new();
+        do game.run();
+        do game.dispose();
+        return;
+    }
+}

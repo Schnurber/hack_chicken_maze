@@ -1,0 +1,115 @@
+/**
+ * The class Enemy (for enemy) shall inherit everything from Chicken.
+ */
+class Enemy {
+  /**
+   * extends Chicken
+   *
+   * Extended with
+   *   - a variable that remembers how many frames have already been played 
+   *   - a variable that can be used by one to remember a direction
+   */
+  field Chicken parent;
+
+  field int frameCounter;
+  field int currentDirection;
+  
+  /**
+   * Calls the super constructor of Chicken.
+   * initialize variables
+   */
+  constructor Enemy new(int xpos, int ypos) {
+    let parent = Chicken.new(xpos, ypos);
+    let frameCounter = 0;
+    let currentDirection = Chicken.DOWN();
+    return this;
+  }
+
+  /**
+   * inherited methods
+   */
+  method int getXpos() {
+    return parent.getXpos();
+  }
+
+  method int getYpos() {
+    return parent.getYpos();
+  }
+
+  method void reset() {
+    do parent.reset();
+    return;
+  }
+  method void draw() {
+    do Assets.enemy(parent.isLeftFoot(), parent.getXpos(), parent.getYpos());
+    return;
+  }
+
+  /**
+   * Here we increase the variable that counts the frames by 1.
+   * If more than 20 frames were counted
+   * - the variable is reset
+   * - the inherited method move(...) with 
+   * - Direction variable called
+   * made a random decision:
+   * - If a random number r with 0 <= r < 1 >= 0.3
+   * - the method nextPosssibleRandomDirection()
+   * is called, which may change the direction of the movement. 
+   */
+  method void update(Maze maze, Tools tools) {
+    let frameCounter = frameCounter + 1;
+    if (frameCounter > 20) {
+      let frameCounter = 0;
+      if (tools.random(4) > 2) {
+        do nextPosssibleRandomDirection(maze, tools);
+      }
+      do parent.move(currentDirection, maze);
+    }
+    return;
+  }
+
+  /**
+   * Here, all four directions are to be tested,
+   * whether, if the object would move in the respective direction
+   * an obstacle is present (wall).
+   * If not, the direction should be memorized.
+   * From the memorized directions a certain direction should then be
+   * selected at random and put into the direction variable currentDirection.
+   */
+  method void nextPosssibleRandomDirection(Maze maze, Tools tools) {
+    var int numDirs;
+    var Array dirs;
+    var int nextDirIndex;
+    let numDirs = 0;
+    let dirs  = Array.new(4);
+    if (~maze.isObstacle(parent.getXpos(), parent.getYpos() - 1)) {
+      let dirs[numDirs] = Chicken.UP();
+      let numDirs = numDirs + 1;
+    }
+    if (~maze.isObstacle(parent.getXpos(), parent.getYpos() + 1)) {
+      let dirs[numDirs] = Chicken.DOWN();
+      let numDirs = numDirs + 1;
+    }
+    if (~maze.isObstacle(parent.getXpos() - 1, parent.getYpos())) {
+      let dirs[numDirs] = Chicken.LEFT();
+      let numDirs = numDirs + 1;
+    }
+    if (~maze.isObstacle(parent.getXpos() + 1, parent.getYpos())) {
+      let dirs[numDirs] = Chicken.RIGHT();
+      let numDirs = numDirs + 1;
+    }
+    if (numDirs > 0) {
+      let numDirs = numDirs - 1;
+    }
+    let nextDirIndex = tools.random(numDirs);
+    do Screens.debugInt(nextDirIndex);
+    let currentDirection = dirs[nextDirIndex];
+    do dirs.dispose();
+    return;
+  }
+  method void dispose() {
+      do parent.dispose();
+      do Memory.deAlloc(this);
+      return;
+   }
+}

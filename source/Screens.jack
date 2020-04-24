@@ -1,0 +1,81 @@
+/**
+ * Screens: a collection of functions do draw messages
+ */
+class Screens {
+  /**
+   * Function to draws the start screen with three lines in the middle of the screen.
+   * Parameters: Three Messages and their number of characters.
+   */
+  function void drawStartScreen(String headline,
+                                String msg1,
+                                String msg2, 
+                                int l1, inr l2, int l3) {
+    var int st1, st2, st3;
+    //computes center
+    let st1 = (64 - l1) / 2;
+    let st2 = (64 - l2) / 2;
+    let st3 = (64 - l3) / 2;
+
+    do Screen.setColor(true);
+    do Output.moveCursor(8,st1);
+    do Output.printString(headline);
+
+    do Output.moveCursor(10, st2);
+    do Output.printString(msg1);
+
+    do Output.moveCursor(12, st3);
+    do Output.printString(msg2);
+
+    do Assets.chicken(false, 5, 3);
+    return;
+  }
+
+  /**
+   * Function to draws messages onto the screen with three lines in the middle of the screen.
+   * Parameters:
+   * - two Messages (String) and their number of characters;
+   * - an additional number.
+   */
+  function void drawMessage(String msg1, String msg2, int l1, int l2, int num) {
+
+    var int st1, st2, st3;
+    //computes center
+    let st1 = (64 - l1) / 2;
+    let st2 = (64 - l2) / 2;
+    let st3 = 31;
+
+    do Screen.setColor(true);
+    do Output.moveCursor(8, st1);
+    do Output.printString(msg1);
+
+    do Output.moveCursor(10,st2);
+    do Output.printString(msg2);
+
+    do Output.moveCursor(13,st3);
+    do Output.printInt(num);
+    return;
+  }
+
+  /**
+   * Helper-Functions used for debugging
+   * uncomment to activate output
+   */
+  function void debug(String message) {
+    do Screen.setColor(true);
+    do Output.moveCursor(1,50);
+    // do Output.printString(message);
+    return;
+  }
+  
+  function void debugInt(int message) {
+    do Screen.setColor(true);
+    do Output.moveCursor(5,50);
+    // do Output.printInt(message);
+    return;
+  }
+  
+  method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+   }
+}

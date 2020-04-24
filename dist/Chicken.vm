@@ -1,0 +1,175 @@
+function Chicken.isLeftFoot 0
+push argument 0
+pop pointer 0
+push this 2
+return
+function Chicken.getXpos 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function Chicken.getYpos 0
+push argument 0
+pop pointer 0
+push this 1
+return
+function Chicken.UP 0
+push constant 1
+return
+function Chicken.DOWN 0
+push constant 2
+return
+function Chicken.LEFT 0
+push constant 3
+return
+function Chicken.RIGHT 0
+push constant 4
+return
+function Chicken.new 0
+push constant 5
+call Memory.alloc 1
+pop pointer 0
+push constant 0
+pop this 0
+push constant 0
+pop this 1
+push this 0
+push argument 0
+add
+pop this 0
+push this 1
+push argument 1
+add
+pop this 1
+push this 0
+pop this 3
+push this 1
+pop this 4
+push constant 0
+not
+pop this 2
+push pointer 0
+return
+function Chicken.reset 0
+push argument 0
+pop pointer 0
+push this 3
+pop this 0
+push this 4
+pop this 1
+push constant 0
+return
+function Chicken.draw 0
+push argument 0
+pop pointer 0
+push this 2
+push this 0
+push this 1
+call Assets.chicken 3
+pop temp 0
+push constant 0
+return
+function Chicken.move 0
+push argument 0
+pop pointer 0
+push this 2
+not
+pop this 2
+push argument 1
+call Chicken.UP 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push argument 2
+push this 0
+push this 1
+push constant 1
+sub
+call Maze.isObstacle 3
+not
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push this 1
+push constant 1
+sub
+pop this 1
+label IF_FALSE1
+label IF_FALSE0
+push argument 1
+call Chicken.DOWN 0
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push argument 2
+push this 0
+push this 1
+push constant 1
+add
+call Maze.isObstacle 3
+not
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 1
+push constant 1
+add
+pop this 1
+label IF_FALSE3
+label IF_FALSE2
+push argument 1
+call Chicken.LEFT 0
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push argument 2
+push this 0
+push constant 1
+sub
+push this 1
+call Maze.isObstacle 3
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push this 0
+push constant 1
+sub
+pop this 0
+label IF_FALSE5
+label IF_FALSE4
+push argument 1
+call Chicken.RIGHT 0
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push argument 2
+push this 0
+push constant 1
+add
+push this 1
+call Maze.isObstacle 3
+not
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push this 0
+push constant 1
+add
+pop this 0
+label IF_FALSE7
+label IF_FALSE6
+push constant 0
+return
+function Chicken.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

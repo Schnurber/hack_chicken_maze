@@ -1,0 +1,1101 @@
+/**
+ * Assets: These are not used directly, but are made available via the asset class.
+ * Here: All Tilemaps 
+ */
+class Maps {
+	function Array level1() {
+		var Array level1;
+		let level1 = Array.new(160);
+
+		let level1[0] = 19;
+		let level1[1] = 0;
+		let level1[2] = 4;
+		let level1[3] = 6;
+		let level1[4] = 5;
+		let level1[5] = 6;
+		let level1[6] = 6;
+		let level1[7] = 5;
+		let level1[8] = 6;
+		let level1[9] = 7;
+
+		let level1[10] = 12;
+		let level1[11] = 0;
+		let level1[12] = 12;
+		let level1[13] = 0;
+		let level1[14] = 12;
+		let level1[15] = 2;
+		let level1[16] = 1;
+		let level1[17] = 15;
+		let level1[18] = 2;
+		let level1[19] = 12;
+
+		let level1[20] = 12;
+		let level1[21] = 0;
+		let level1[22] = 12;
+		let level1[23] = 0;
+		let level1[24] = 12;
+		let level1[25] = 2;
+		let level1[26] = 0;
+		let level1[27] = 0;
+		let level1[28] = 0;
+		let level1[29] = 12;
+
+		let level1[30] = 12;
+		let level1[31] = 0;
+		let level1[32] = 12;
+		let level1[33] = 0;
+		let level1[34] = 12;
+		let level1[35] = 2;
+		let level1[36] = 4;
+		let level1[37] = 6;
+		let level1[38] = 6;
+		let level1[39] = 11;
+
+		let level1[40] = 12;
+		let level1[41] = 0;
+		let level1[42] = 12;
+		let level1[43] = 0;
+		let level1[44] = 12;
+		let level1[45] = 0;
+		let level1[46] = 12;
+		let level1[47] = 0;
+		let level1[48] = 0;
+		let level1[49] = 12;
+
+		let level1[50] = 12;
+		let level1[51] = 0;
+		let level1[52] = 15;
+		let level1[53] = 0;
+		let level1[54] = 12;
+		let level1[55] = 0;
+		let level1[56] = 12;
+		let level1[57] = 1;
+		let level1[58] = 0;
+		let level1[59] = 12;
+
+		let level1[60] = 12;
+		let level1[61] = 0;
+		let level1[62] = 0;
+		let level1[63] = 0;
+		let level1[64] = 15;
+		let level1[65] = 0;
+		let level1[66] = 12;
+		let level1[67] = 0;
+		let level1[68] = 2;
+		let level1[69] = 12;
+
+		let level1[70] = 12;
+		let level1[71] = 0;
+		let level1[72] = 19;
+		let level1[73] = 0;
+		let level1[74] = 1;
+		let level1[75] = 0;
+		let level1[76] = 12;
+		let level1[77] = 1;
+		let level1[78] = 1;
+		let level1[79] = 12;
+
+		let level1[80] = 12;
+		let level1[81] = 0;
+		let level1[82] = 12;
+		let level1[83] = 0;
+		let level1[84] = 19;
+		let level1[85] = 0;
+		let level1[86] = 12;
+		let level1[87] = 2;
+		let level1[88] = 0;
+		let level1[89] = 12;
+
+		let level1[90] = 12;
+		let level1[91] = 0;
+		let level1[92] = 8;
+		let level1[93] = 6;
+		let level1[94] = 9;
+		let level1[95] = 6;
+		let level1[96] = 11;
+		let level1[97] = 0;
+		let level1[98] = 0;
+		let level1[99] = 12;
+
+		let level1[100] = 12;
+		let level1[101] = 2;
+		let level1[102] = 12;
+		let level1[103] = 0;
+		let level1[104] = 15;
+		let level1[105] = 0;
+		let level1[106] = 12;
+		let level1[107] = 0;
+		let level1[108] = 22;
+		let level1[109] = 11;
+
+		let level1[110] = 12;
+		let level1[111] = 0;
+		let level1[112] = 12;
+		let level1[113] = 0;
+		let level1[114] = 0;
+		let level1[115] = 2;
+		let level1[116] = 12;
+		let level1[117] = 0;
+		let level1[118] = 0;
+		let level1[119] = 12;
+
+		let level1[120] = 12;
+		let level1[121] = 1;
+		let level1[122] = 12;
+		let level1[123] = 0;
+		let level1[124] = 19;
+		let level1[125] = 0;
+		let level1[126] = 15;
+		let level1[127] = 0;
+		let level1[128] = 0;
+		let level1[129] = 12;
+
+		let level1[130] = 12;
+		let level1[131] = 0;
+		let level1[132] = 15;
+		let level1[133] = 0;
+		let level1[134] = 12;
+		let level1[135] = 0;
+		let level1[136] = 0;
+		let level1[137] = 1;
+		let level1[138] = 1;
+		let level1[139] = 12;
+
+		let level1[140] = 12;
+		let level1[141] = 0;
+		let level1[142] = 1;
+		let level1[143] = 0;
+		let level1[144] = 12;
+		let level1[145] = 0;
+		let level1[146] = 19;
+		let level1[147] = 1;
+		let level1[148] = 0;
+		let level1[149] = 12;
+
+		let level1[150] = 20;
+		let level1[151] = 6;
+		let level1[152] = 6;
+		let level1[153] = 6;
+		let level1[154] = 21;
+		let level1[155] = 6;
+		let level1[156] = 21;
+		let level1[157] = 18;
+		let level1[158] = 0;
+		let level1[159] = 15;
+		return level1;
+	}
+	function Array level2() {
+		var Array level2;
+		let level2 = Array.new(160);
+
+		let level2[0] = 19;
+		let level2[1] = 0;
+		let level2[2] = 22;
+		let level2[3] = 6;
+		let level2[4] = 6;
+		let level2[5] = 5;
+		let level2[6] = 6;
+		let level2[7] = 5;
+		let level2[8] = 6;
+		let level2[9] = 7;
+
+		let level2[10] = 12;
+		let level2[11] = 0;
+		let level2[12] = 0;
+		let level2[13] = 0;
+		let level2[14] = 0;
+		let level2[15] = 15;
+		let level2[16] = 0;
+		let level2[17] = 12;
+		let level2[18] = 0;
+		let level2[19] = 12;
+
+		let level2[20] = 12;
+		let level2[21] = 1;
+		let level2[22] = 0;
+		let level2[23] = 0;
+		let level2[24] = 0;
+		let level2[25] = 0;
+		let level2[26] = 0;
+		let level2[27] = 12;
+		let level2[28] = 1;
+		let level2[29] = 12;
+
+		let level2[30] = 12;
+		let level2[31] = 0;
+		let level2[32] = 4;
+		let level2[33] = 6;
+		let level2[34] = 6;
+		let level2[35] = 7;
+		let level2[36] = 0;
+		let level2[37] = 12;
+		let level2[38] = 0;
+		let level2[39] = 12;
+
+		let level2[40] = 12;
+		let level2[41] = 0;
+		let level2[42] = 8;
+		let level2[43] = 6;
+		let level2[44] = 6;
+		let level2[45] = 9;
+		let level2[46] = 6;
+		let level2[47] = 23;
+		let level2[48] = 0;
+		let level2[49] = 12;
+
+		let level2[50] = 12;
+		let level2[51] = 0;
+		let level2[52] = 15;
+		let level2[53] = 0;
+		let level2[54] = 0;
+		let level2[55] = 12;
+		let level2[56] = 0;
+		let level2[57] = 1;
+		let level2[58] = 0;
+		let level2[59] = 12;
+
+		let level2[60] = 12;
+		let level2[61] = 0;
+		let level2[62] = 0;
+		let level2[63] = 0;
+		let level2[64] = 0;
+		let level2[65] = 12;
+		let level2[66] = 0;
+		let level2[67] = 0;
+		let level2[68] = 0;
+		let level2[69] = 12;
+
+		let level2[70] = 12;
+		let level2[71] = 0;
+		let level2[72] = 0;
+		let level2[73] = 4;
+		let level2[74] = 6;
+		let level2[75] = 21;
+		let level2[76] = 18;
+		let level2[77] = 1;
+		let level2[78] = 0;
+		let level2[79] = 12;
+
+		let level2[80] = 12;
+		let level2[81] = 0;
+		let level2[82] = 0;
+		let level2[83] = 12;
+		let level2[84] = 0;
+		let level2[85] = 0;
+		let level2[86] = 0;
+		let level2[87] = 2;
+		let level2[88] = 0;
+		let level2[89] = 12;
+
+		let level2[90] = 12;
+		let level2[91] = 0;
+		let level2[92] = 1;
+		let level2[93] = 20;
+		let level2[94] = 6;
+		let level2[95] = 6;
+		let level2[96] = 18;
+		let level2[97] = 0;
+		let level2[98] = 0;
+		let level2[99] = 12;
+
+		let level2[100] = 12;
+		let level2[101] = 2;
+		let level2[102] = 0;
+		let level2[103] = 0;
+		let level2[104] = 0;
+		let level2[105] = 0;
+		let level2[106] = 0;
+		let level2[107] = 0;
+		let level2[108] = 0;
+		let level2[109] = 12;
+
+		let level2[110] = 12;
+		let level2[111] = 0;
+		let level2[112] = 0;
+		let level2[113] = 22;
+		let level2[114] = 7;
+		let level2[115] = 4;
+		let level2[116] = 6;
+		let level2[117] = 18;
+		let level2[118] = 0;
+		let level2[119] = 12;
+
+		let level2[120] = 12;
+		let level2[121] = 0;
+		let level2[122] = 0;
+		let level2[123] = 0;
+		let level2[124] = 8;
+		let level2[125] = 11;
+		let level2[126] = 0;
+		let level2[127] = 0;
+		let level2[128] = 0;
+		let level2[129] = 12;
+
+		let level2[130] = 12;
+		let level2[131] = 0;
+		let level2[132] = 0;
+		let level2[133] = 0;
+		let level2[134] = 12;
+		let level2[135] = 20;
+		let level2[136] = 6;
+		let level2[137] = 18;
+		let level2[138] = 1;
+		let level2[139] = 12;
+
+		let level2[140] = 12;
+		let level2[141] = 0;
+		let level2[142] = 1;
+		let level2[143] = 0;
+		let level2[144] = 12;
+		let level2[145] = 0;
+		let level2[146] = 0;
+		let level2[147] = 1;
+		let level2[148] = 0;
+		let level2[149] = 12;
+
+		let level2[150] = 20;
+		let level2[151] = 6;
+		let level2[152] = 6;
+		let level2[153] = 6;
+		let level2[154] = 21;
+		let level2[155] = 6;
+		let level2[156] = 6;
+		let level2[157] = 18;
+		let level2[158] = 0;
+		let level2[159] = 15;
+		return level2;
+	}
+
+	function Array level3() {
+		var Array level3;
+		let level3 = Array.new(160);
+
+		let level3[0] = 19;
+		let level3[1] = 0;
+		let level3[2] = 4;
+		let level3[3] = 6;
+		let level3[4] = 6;
+		let level3[5] = 6;
+		let level3[6] = 6;
+		let level3[7] = 6;
+		let level3[8] = 6;
+		let level3[9] = 7;
+
+		let level3[10] = 12;
+		let level3[11] = 0;
+		let level3[12] = 15;
+		let level3[13] = 0;
+		let level3[14] = 0;
+		let level3[15] = 0;
+		let level3[16] = 0;
+		let level3[17] = 0;
+		let level3[18] = 0;
+		let level3[19] = 12;
+
+		let level3[20] = 12;
+		let level3[21] = 0;
+		let level3[22] = 0;
+		let level3[23] = 2;
+		let level3[24] = 4;
+		let level3[25] = 6;
+		let level3[26] = 6;
+		let level3[27] = 6;
+		let level3[28] = 6;
+		let level3[29] = 11;
+
+		let level3[30] = 12;
+		let level3[31] = 0;
+		let level3[32] = 19;
+		let level3[33] = 0;
+		let level3[34] = 12;
+		let level3[35] = 0;
+		let level3[36] = 0;
+		let level3[37] = 0;
+		let level3[38] = 0;
+		let level3[39] = 12;
+
+		let level3[40] = 12;
+		let level3[41] = 0;
+		let level3[42] = 12;
+		let level3[43] = 2;
+		let level3[44] = 15;
+		let level3[45] = 0;
+		let level3[46] = 4;
+		let level3[47] = 18;
+		let level3[48] = 0;
+		let level3[49] = 12;
+
+		let level3[50] = 12;
+		let level3[51] = 1;
+		let level3[52] = 12;
+		let level3[53] = 0;
+		let level3[54] = 0;
+		let level3[55] = 1;
+		let level3[56] = 12;
+		let level3[57] = 0;
+		let level3[58] = 0;
+		let level3[59] = 12;
+
+		let level3[60] = 12;
+		let level3[61] = 1;
+		let level3[62] = 12;
+		let level3[63] = 1;
+		let level3[64] = 4;
+		let level3[65] = 6;
+		let level3[66] = 23;
+		let level3[67] = 2;
+		let level3[68] = 22;
+		let level3[69] = 11;
+
+		let level3[70] = 12;
+		let level3[71] = 0;
+		let level3[72] = 12;
+		let level3[73] = 0;
+		let level3[74] = 12;
+		let level3[75] = 0;
+		let level3[76] = 0;
+		let level3[77] = 0;
+		let level3[78] = 0;
+		let level3[79] = 12;
+
+		let level3[80] = 8;
+		let level3[81] = 6;
+		let level3[82] = 9;
+		let level3[83] = 6;
+		let level3[84] = 21;
+		let level3[85] = 5;
+		let level3[86] = 18;
+		let level3[87] = 2;
+		let level3[88] = 22;
+		let level3[89] = 11;
+
+		let level3[90] = 12;
+		let level3[91] = 0;
+		let level3[92] = 15;
+		let level3[93] = 1;
+		let level3[94] = 0;
+		let level3[95] = 12;
+		let level3[96] = 0;
+		let level3[97] = 0;
+		let level3[98] = 0;
+		let level3[99] = 12;
+
+		let level3[100] = 12;
+		let level3[101] = 2;
+		let level3[102] = 0;
+		let level3[103] = 2;
+		let level3[104] = 2;
+		let level3[105] = 12;
+		let level3[106] = 0;
+		let level3[107] = 0;
+		let level3[108] = 0;
+		let level3[109] = 12;
+
+		let level3[110] = 8;
+		let level3[111] = 6;
+		let level3[112] = 18;
+		let level3[113] = 1;
+		let level3[114] = 22;
+		let level3[115] = 11;
+		let level3[116] = 0;
+		let level3[117] = 0;
+		let level3[118] = 0;
+		let level3[119] = 12;
+
+		let level3[120] = 12;
+		let level3[121] = 2;
+		let level3[122] = 0;
+		let level3[123] = 2;
+		let level3[124] = 2;
+		let level3[125] = 8;
+		let level3[126] = 18;
+		let level3[127] = 0;
+		let level3[128] = 22;
+		let level3[129] = 11;
+
+		let level3[130] = 12;
+		let level3[131] = 0;
+		let level3[132] = 19;
+		let level3[133] = 0;
+		let level3[134] = 22;
+		let level3[135] = 23;
+		let level3[136] = 1;
+		let level3[137] = 0;
+		let level3[138] = 0;
+		let level3[139] = 12;
+
+		let level3[140] = 12;
+		let level3[141] = 0;
+		let level3[142] = 12;
+		let level3[143] = 0;
+		let level3[144] = 0;
+		let level3[145] = 1;
+		let level3[146] = 2;
+		let level3[147] = 19;
+		let level3[148] = 0;
+		let level3[149] = 12;
+
+		let level3[150] = 20;
+		let level3[151] = 6;
+		let level3[152] = 21;
+		let level3[153] = 6;
+		let level3[154] = 6;
+		let level3[155] = 6;
+		let level3[156] = 6;
+		let level3[157] = 23;
+		let level3[158] = 0;
+		let level3[159] = 15;
+		return level3;
+	}
+
+	function Array grain1() {
+		var Array grain1;
+		let grain1 = Array.new(160);
+
+		let grain1[0] = -1;
+		let grain1[1] = -1;
+		let grain1[2] = -1;
+		let grain1[3] = -1;
+		let grain1[4] = -1;
+		let grain1[5] = -1;
+		let grain1[6] = -1;
+		let grain1[7] = -1;
+		let grain1[8] = -1;
+		let grain1[9] = -1;
+
+		let grain1[10] = -1;
+		let grain1[11] = -1;
+		let grain1[12] = -1;
+		let grain1[13] = 1;
+		let grain1[14] = -1;
+		let grain1[15] = 3;
+		let grain1[16] = -1;
+		let grain1[17] = -1;
+		let grain1[18] = 0;
+		let grain1[19] = -1;
+
+		let grain1[20] = -1;
+		let grain1[21] = 0;
+		let grain1[22] = -1;
+		let grain1[23] = 3;
+		let grain1[24] = -1;
+		let grain1[25] = 3;
+		let grain1[26] = 3;
+		let grain1[27] = 2;
+		let grain1[28] = 2;
+		let grain1[29] = -1;
+
+		let grain1[30] = -1;
+		let grain1[31] = 1;
+		let grain1[32] = -1;
+		let grain1[33] = 2;
+		let grain1[34] = -1;
+		let grain1[35] = 3;
+		let grain1[36] = -1;
+		let grain1[37] = -1;
+		let grain1[38] = -1;
+		let grain1[39] = -1;
+
+		let grain1[40] = -1;
+		let grain1[41] = -1;
+		let grain1[42] = -1;
+		let grain1[43] = 3;
+		let grain1[44] = -1;
+		let grain1[45] = 0;
+		let grain1[46] = -1;
+		let grain1[47] = 0;
+		let grain1[48] = -1;
+		let grain1[49] = -1;
+
+		let grain1[50] = -1;
+		let grain1[51] = 0;
+		let grain1[52] = -1;
+		let grain1[53] = 3;
+		let grain1[54] = -1;
+		let grain1[55] = 3;
+		let grain1[56] = -1;
+		let grain1[57] = -1;
+		let grain1[58] = 0;
+		let grain1[59] = -1;
+
+		let grain1[60] = -1;
+		let grain1[61] = -1;
+		let grain1[62] = 0;
+		let grain1[63] = 3;
+		let grain1[64] = -1;
+		let grain1[65] = -1;
+		let grain1[66] = -1;
+		let grain1[67] = 0;
+		let grain1[68] = -1;
+		let grain1[69] = -1;
+
+		let grain1[70] = -1;
+		let grain1[71] = 3;
+		let grain1[72] = -1;
+		let grain1[73] = 3;
+		let grain1[74] = -1;
+		let grain1[75] = 0;
+		let grain1[76] = -1;
+		let grain1[77] = 0;
+		let grain1[78] = -1;
+		let grain1[79] = -1;
+
+		let grain1[80] = -1;
+		let grain1[81] = -1;
+		let grain1[82] = -1;
+		let grain1[83] = -1;
+		let grain1[84] = -1;
+		let grain1[85] = -1;
+		let grain1[86] = -1;
+		let grain1[87] = 3;
+		let grain1[88] = 1;
+		let grain1[89] = -1;
+
+		let grain1[90] = -1;
+		let grain1[91] = -1;
+		let grain1[92] = -1;
+		let grain1[93] = -1;
+		let grain1[94] = -1;
+		let grain1[95] = -1;
+		let grain1[96] = -1;
+		let grain1[97] = -1;
+		let grain1[98] = 3;
+		let grain1[99] = -1;
+
+		let grain1[100] = -1;
+		let grain1[101] = -1;
+		let grain1[102] = -1;
+		let grain1[103] = 0;
+		let grain1[104] = -1;
+		let grain1[105] = 0;
+		let grain1[106] = -1;
+		let grain1[107] = -1;
+		let grain1[108] = -1;
+		let grain1[109] = -1;
+
+		let grain1[110] = -1;
+		let grain1[111] = 1;
+		let grain1[112] = -1;
+		let grain1[113] = -1;
+		let grain1[114] = -1;
+		let grain1[115] = -1;
+		let grain1[116] = -1;
+		let grain1[117] = 2;
+		let grain1[118] = 1;
+		let grain1[119] = -1;
+
+		let grain1[120] = -1;
+		let grain1[121] = 1;
+		let grain1[122] = -1;
+		let grain1[123] = 0;
+		let grain1[124] = -1;
+		let grain1[125] = 3;
+		let grain1[126] = -1;
+		let grain1[127] = 0;
+		let grain1[128] = -1;
+		let grain1[129] = -1;
+
+		let grain1[130] = -1;
+		let grain1[131] = -1;
+		let grain1[132] = -1;
+		let grain1[133] = -1;
+		let grain1[134] = -1;
+		let grain1[135] = 0;
+		let grain1[136] = -1;
+		let grain1[137] = 2;
+		let grain1[138] = 1;
+		let grain1[139] = -1;
+
+		let grain1[140] = -1;
+		let grain1[141] = 1;
+		let grain1[142] = -1;
+		let grain1[143] = -1;
+		let grain1[144] = -1;
+		let grain1[145] = 1;
+		let grain1[146] = -1;
+		let grain1[147] = 3;
+		let grain1[148] = -1;
+		let grain1[149] = -1;
+
+		let grain1[150] = -1;
+		let grain1[151] = -1;
+		let grain1[152] = -1;
+		let grain1[153] = -1;
+		let grain1[154] = -1;
+		let grain1[155] = -1;
+		let grain1[156] = -1;
+		let grain1[157] = -1;
+		let grain1[158] = -1;
+		let grain1[159] = -1;
+		return grain1;
+	}
+
+	function Array grain2() {
+		var Array grain2;
+		let grain2 = Array.new(160);
+
+		let grain2[0] = -1;
+		let grain2[1] = -1;
+		let grain2[2] = -1;
+		let grain2[3] = -1;
+		let grain2[4] = -1;
+		let grain2[5] = -1;
+		let grain2[6] = -1;
+		let grain2[7] = -1;
+		let grain2[8] = -1;
+		let grain2[9] = -1;
+
+		let grain2[10] = -1;
+		let grain2[11] = -1;
+		let grain2[12] = 0;
+		let grain2[13] = -1;
+		let grain2[14] = -1;
+		let grain2[15] = -1;
+		let grain2[16] = -1;
+		let grain2[17] = -1;
+		let grain2[18] = -1;
+		let grain2[19] = -1;
+
+		let grain2[20] = -1;
+		let grain2[21] = 1;
+		let grain2[22] = -1;
+		let grain2[23] = 1;
+		let grain2[24] = -1;
+		let grain2[25] = -1;
+		let grain2[26] = 0;
+		let grain2[27] = -1;
+		let grain2[28] = -1;
+		let grain2[29] = -1;
+
+		let grain2[30] = -1;
+		let grain2[31] = -1;
+		let grain2[32] = -1;
+		let grain2[33] = -1;
+		let grain2[34] = -1;
+		let grain2[35] = -1;
+		let grain2[36] = -1;
+		let grain2[37] = -1;
+		let grain2[38] = 0;
+		let grain2[39] = -1;
+
+		let grain2[40] = -1;
+		let grain2[41] = 1;
+		let grain2[42] = -1;
+		let grain2[43] = -1;
+		let grain2[44] = -1;
+		let grain2[45] = -1;
+		let grain2[46] = -1;
+		let grain2[47] = -1;
+		let grain2[48] = -1;
+		let grain2[49] = -1;
+
+		let grain2[50] = -1;
+		let grain2[51] = -1;
+		let grain2[52] = -1;
+		let grain2[53] = 1;
+		let grain2[54] = -1;
+		let grain2[55] = -1;
+		let grain2[56] = -1;
+		let grain2[57] = 0;
+		let grain2[58] = -1;
+		let grain2[59] = -1;
+
+		let grain2[60] = -1;
+		let grain2[61] = -1;
+		let grain2[62] = -1;
+		let grain2[63] = -1;
+		let grain2[64] = 1;
+		let grain2[65] = -1;
+		let grain2[66] = 1;
+		let grain2[67] = -1;
+		let grain2[68] = 1;
+		let grain2[69] = -1;
+
+		let grain2[70] = -1;
+		let grain2[71] = 0;
+		let grain2[72] = -1;
+		let grain2[73] = -1;
+		let grain2[74] = -1;
+		let grain2[75] = -1;
+		let grain2[76] = -1;
+		let grain2[77] = -1;
+		let grain2[78] = -1;
+		let grain2[79] = -1;
+
+		let grain2[80] = -1;
+		let grain2[81] = -1;
+		let grain2[82] = -1;
+		let grain2[83] = -1;
+		let grain2[84] = -1;
+		let grain2[85] = -1;
+		let grain2[86] = -1;
+		let grain2[87] = -1;
+		let grain2[88] = 0;
+		let grain2[89] = -1;
+
+		let grain2[90] = -1;
+		let grain2[91] = -1;
+		let grain2[92] = -1;
+		let grain2[93] = -1;
+		let grain2[94] = -1;
+		let grain2[95] = -1;
+		let grain2[96] = -1;
+		let grain2[97] = -1;
+		let grain2[98] = -1;
+		let grain2[99] = -1;
+
+		let grain2[100] = -1;
+		let grain2[101] = 0;
+		let grain2[102] = -1;
+		let grain2[103] = 1;
+		let grain2[104] = -1;
+		let grain2[105] = -1;
+		let grain2[106] = 0;
+		let grain2[107] = -1;
+		let grain2[108] = -1;
+		let grain2[109] = -1;
+
+		let grain2[110] = -1;
+		let grain2[111] = 1;
+		let grain2[112] = -1;
+		let grain2[113] = -1;
+		let grain2[114] = -1;
+		let grain2[115] = -1;
+		let grain2[116] = -1;
+		let grain2[117] = -1;
+		let grain2[118] = 1;
+		let grain2[119] = -1;
+
+		let grain2[120] = -1;
+		let grain2[121] = -1;
+		let grain2[122] = -1;
+		let grain2[123] = -1;
+		let grain2[124] = -1;
+		let grain2[125] = -1;
+		let grain2[126] = 1;
+		let grain2[127] = -1;
+		let grain2[128] = -1;
+		let grain2[129] = -1;
+
+		let grain2[130] = -1;
+		let grain2[131] = -1;
+		let grain2[132] = 0;
+		let grain2[133] = -1;
+		let grain2[134] = -1;
+		let grain2[135] = -1;
+		let grain2[136] = -1;
+		let grain2[137] = -1;
+		let grain2[138] = -1;
+		let grain2[139] = -1;
+
+		let grain2[140] = -1;
+		let grain2[141] = -1;
+		let grain2[142] = -1;
+		let grain2[143] = 1;
+		let grain2[144] = -1;
+		let grain2[145] = 1;
+		let grain2[146] = -1;
+		let grain2[147] = 1;
+		let grain2[148] = -1;
+		let grain2[149] = -1;
+
+		let grain2[150] = -1;
+		let grain2[151] = -1;
+		let grain2[152] = -1;
+		let grain2[153] = -1;
+		let grain2[154] = -1;
+		let grain2[155] = -1;
+		let grain2[156] = -1;
+		let grain2[157] = -1;
+		let grain2[158] = -1;
+		let grain2[159] = -1;
+		return grain2;
+	}
+
+	function Array grain3() {
+		var Array grain3;
+		let grain3 = Array.new(160);
+
+		let grain3[0] = -1;
+		let grain3[1] = 2;
+		let grain3[2] = -1;
+		let grain3[3] = -1;
+		let grain3[4] = -1;
+		let grain3[5] = -1;
+		let grain3[6] = -1;
+		let grain3[7] = -1;
+		let grain3[8] = -1;
+		let grain3[9] = -1;
+
+		let grain3[10] = -1;
+		let grain3[11] = 0;
+		let grain3[12] = -1;
+		let grain3[13] = -1;
+		let grain3[14] = 0;
+		let grain3[15] = 0;
+		let grain3[16] = 2;
+		let grain3[17] = -1;
+		let grain3[18] = -1;
+		let grain3[19] = -1;
+
+		let grain3[20] = -1;
+		let grain3[21] = 2;
+		let grain3[22] = -1;
+		let grain3[23] = -1;
+		let grain3[24] = -1;
+		let grain3[25] = -1;
+		let grain3[26] = -1;
+		let grain3[27] = -1;
+		let grain3[28] = -1;
+		let grain3[29] = -1;
+
+		let grain3[30] = -1;
+		let grain3[31] = 3;
+		let grain3[32] = -1;
+		let grain3[33] = 3;
+		let grain3[34] = -1;
+		let grain3[35] = 3;
+		let grain3[36] = 1;
+		let grain3[37] = -1;
+		let grain3[38] = -1;
+		let grain3[39] = -1;
+
+		let grain3[40] = -1;
+		let grain3[41] = -1;
+		let grain3[42] = -1;
+		let grain3[43] = 3;
+		let grain3[44] = -1;
+		let grain3[45] = -1;
+		let grain3[46] = -1;
+		let grain3[47] = -1;
+		let grain3[48] = -1;
+		let grain3[49] = -1;
+
+		let grain3[50] = -1;
+		let grain3[51] = 2;
+		let grain3[52] = -1;
+		let grain3[53] = 0;
+		let grain3[54] = 1;
+		let grain3[55] = -1;
+		let grain3[56] = -1;
+		let grain3[57] = -1;
+		let grain3[58] = -1;
+		let grain3[59] = -1;
+
+		let grain3[60] = -1;
+		let grain3[61] = -1;
+		let grain3[62] = -1;
+		let grain3[63] = -1;
+		let grain3[64] = -1;
+		let grain3[65] = -1;
+		let grain3[66] = -1;
+		let grain3[67] = -1;
+		let grain3[68] = -1;
+		let grain3[69] = -1;
+
+		let grain3[70] = -1;
+		let grain3[71] = 1;
+		let grain3[72] = -1;
+		let grain3[73] = 1;
+		let grain3[74] = -1;
+		let grain3[75] = 3;
+		let grain3[76] = 1;
+		let grain3[77] = 3;
+		let grain3[78] = 1;
+		let grain3[79] = -1;
+
+		let grain3[80] = -1;
+		let grain3[81] = -1;
+		let grain3[82] = -1;
+		let grain3[83] = -1;
+		let grain3[84] = -1;
+		let grain3[85] = -1;
+		let grain3[86] = -1;
+		let grain3[87] = -1;
+		let grain3[88] = -1;
+		let grain3[89] = -1;
+
+		let grain3[90] = -1;
+		let grain3[91] = 2;
+		let grain3[92] = -1;
+		let grain3[93] = 3;
+		let grain3[94] = 1;
+		let grain3[95] = -1;
+		let grain3[96] = 3;
+		let grain3[97] = -1;
+		let grain3[98] = 2;
+		let grain3[99] = -1;
+
+		let grain3[100] = -1;
+		let grain3[101] = 1;
+		let grain3[102] = 1;
+		let grain3[103] = 3;
+		let grain3[104] = 3;
+		let grain3[105] = -1;
+		let grain3[106] = 2;
+		let grain3[107] = -1;
+		let grain3[108] = 2;
+		let grain3[109] = -1;
+
+		let grain3[110] = -1;
+		let grain3[111] = -1;
+		let grain3[112] = -1;
+		let grain3[113] = 1;
+		let grain3[114] = -1;
+		let grain3[115] = -1;
+		let grain3[116] = -1;
+		let grain3[117] = 0;
+		let grain3[118] = 0;
+		let grain3[119] = -1;
+
+		let grain3[120] = -1;
+		let grain3[121] = -1;
+		let grain3[122] = 3;
+		let grain3[123] = 3;
+		let grain3[124] = 3;
+		let grain3[125] = -1;
+		let grain3[126] = -1;
+		let grain3[127] = 2;
+		let grain3[128] = -1;
+		let grain3[129] = -1;
+
+		let grain3[130] = -1;
+		let grain3[131] = 2;
+		let grain3[132] = -1;
+		let grain3[133] = 3;
+		let grain3[134] = -1;
+		let grain3[135] = -1;
+		let grain3[136] = 3;
+		let grain3[137] = -1;
+		let grain3[138] = 2;
+		let grain3[139] = -1;
+
+		let grain3[140] = -1;
+		let grain3[141] = -1;
+		let grain3[142] = -1;
+		let grain3[143] = -1;
+		let grain3[144] = 1;
+		let grain3[145] = 1;
+		let grain3[146] = 2;
+		let grain3[147] = -1;
+		let grain3[148] = 2;
+		let grain3[149] = -1;
+
+		let grain3[150] = -1;
+		let grain3[151] = -1;
+		let grain3[152] = -1;
+		let grain3[153] = -1;
+		let grain3[154] = -1;
+		let grain3[155] = -1;
+		let grain3[156] = -1;
+		let grain3[157] = -1;
+		let grain3[158] = 0;
+		let grain3[159] = -1;
+		return grain3;
+	}
+
+	method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+   }
+}

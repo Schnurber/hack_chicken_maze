@@ -1,0 +1,558 @@
+function Assets.chicken 1
+push constant 11
+push argument 1
+add
+push constant 512
+push argument 2
+call Math.multiply 2
+add
+pop local 0
+push argument 0
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 0
+call Sprites.chicken1 1
+pop temp 0
+goto IF_END0
+label IF_FALSE0
+push local 0
+call Sprites.chicken2 1
+pop temp 0
+label IF_END0
+push constant 0
+return
+function Assets.enemy 1
+push constant 11
+push argument 1
+add
+push constant 512
+push argument 2
+call Math.multiply 2
+add
+pop local 0
+push argument 0
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 0
+call Sprites.enemy1 1
+pop temp 0
+goto IF_END0
+label IF_FALSE0
+push local 0
+call Sprites.enemy2 1
+pop temp 0
+label IF_END0
+push constant 0
+return
+function Assets.tiles 1
+push constant 11
+push argument 1
+add
+push constant 512
+push argument 2
+call Math.multiply 2
+add
+pop local 0
+push argument 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 0
+call Tiles.ground1 1
+pop temp 0
+label IF_FALSE0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 0
+call Tiles.ground2 1
+pop temp 0
+label IF_FALSE1
+push argument 0
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push local 0
+call Tiles.ground3 1
+pop temp 0
+label IF_FALSE2
+push argument 0
+push constant 3
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push local 0
+call Tiles.ground3 1
+pop temp 0
+label IF_FALSE3
+push argument 0
+push constant 4
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push local 0
+call Tiles.corner1 1
+pop temp 0
+label IF_FALSE4
+push argument 0
+push constant 5
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push local 0
+call Tiles.t1 1
+pop temp 0
+label IF_FALSE5
+push argument 0
+push constant 6
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push local 0
+call Tiles.wallh 1
+pop temp 0
+label IF_FALSE6
+push argument 0
+push constant 7
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push local 0
+call Tiles.corner2 1
+pop temp 0
+label IF_FALSE7
+push argument 0
+push constant 8
+eq
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push local 0
+call Tiles.t4 1
+pop temp 0
+label IF_FALSE8
+push argument 0
+push constant 9
+eq
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push local 0
+call Tiles.cross 1
+pop temp 0
+label IF_FALSE9
+push argument 0
+push constant 11
+eq
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push local 0
+call Tiles.t2 1
+pop temp 0
+label IF_FALSE10
+push argument 0
+push constant 12
+eq
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push local 0
+call Tiles.wallv 1
+pop temp 0
+label IF_FALSE11
+push argument 0
+push constant 15
+eq
+if-goto IF_TRUE12
+goto IF_FALSE12
+label IF_TRUE12
+push local 0
+call Tiles.cap3 1
+pop temp 0
+label IF_FALSE12
+push argument 0
+push constant 18
+eq
+if-goto IF_TRUE13
+goto IF_FALSE13
+label IF_TRUE13
+push local 0
+call Tiles.cap2 1
+pop temp 0
+label IF_FALSE13
+push argument 0
+push constant 19
+eq
+if-goto IF_TRUE14
+goto IF_FALSE14
+label IF_TRUE14
+push local 0
+call Tiles.cap1 1
+pop temp 0
+label IF_FALSE14
+push argument 0
+push constant 20
+eq
+if-goto IF_TRUE15
+goto IF_FALSE15
+label IF_TRUE15
+push local 0
+call Tiles.corner4 1
+pop temp 0
+label IF_FALSE15
+push argument 0
+push constant 21
+eq
+if-goto IF_TRUE16
+goto IF_FALSE16
+label IF_TRUE16
+push local 0
+call Tiles.t3 1
+pop temp 0
+label IF_FALSE16
+push argument 0
+push constant 22
+eq
+if-goto IF_TRUE17
+goto IF_FALSE17
+label IF_TRUE17
+push local 0
+call Tiles.cap4 1
+pop temp 0
+label IF_FALSE17
+push argument 0
+push constant 23
+eq
+if-goto IF_TRUE18
+goto IF_FALSE18
+label IF_TRUE18
+push local 0
+call Tiles.corner3 1
+pop temp 0
+label IF_FALSE18
+push constant 0
+return
+function Assets.grain 1
+push constant 11
+push argument 1
+add
+push constant 512
+push argument 2
+call Math.multiply 2
+add
+pop local 0
+push argument 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 0
+call Sprites.grain1 1
+pop temp 0
+label IF_FALSE0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 0
+call Sprites.grain2 1
+pop temp 0
+label IF_FALSE1
+push argument 0
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push local 0
+call Sprites.grain1 1
+pop temp 0
+label IF_FALSE2
+push argument 0
+push constant 3
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push local 0
+call Sprites.grain2 1
+pop temp 0
+label IF_FALSE3
+push constant 0
+return
+function Assets.tileMap 0
+push argument 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call Maps.level1 0
+return
+label IF_FALSE0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+call Maps.level2 0
+return
+label IF_FALSE1
+call Maps.level3 0
+return
+function Assets.tileGrain 0
+push argument 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call Maps.grain1 0
+return
+label IF_FALSE0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+call Maps.grain2 0
+return
+label IF_FALSE1
+call Maps.grain3 0
+return
+function Assets.enemyPositions 1
+push argument 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 4
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+label IF_FALSE0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 6
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+label IF_FALSE1
+push argument 0
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 8
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 10
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 13
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+label IF_FALSE2
+push local 0
+return
+function Assets.enemyCount 1
+push argument 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 2
+pop local 0
+label IF_FALSE0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 3
+pop local 0
+label IF_FALSE1
+push argument 0
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 4
+pop local 0
+label IF_FALSE2
+push local 0
+return
+function Assets.RASTER 0
+push constant 16
+return
+function Assets.MAZEWIDTH 0
+push constant 10
+return
+function Assets.MAZEHEIGHT 0
+push constant 16
+return

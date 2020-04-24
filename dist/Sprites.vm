@@ -1,0 +1,629 @@
+function Sprites.chicken1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 384
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 1632
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 2640
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 2448
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 1056
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 7128
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 9252
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 10260
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 10260
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 10260
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 5160
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 2016
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 2064
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 12300
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 6168
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Sprites.chicken2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 384
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 1632
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 2064
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 2640
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 2448
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 1056
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 31710
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 31711
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 30703
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 26599
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 26646
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 1056
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 2016
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 1056
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 1056
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 3696
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Sprites.enemy1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 24579
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 22989
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 9778
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 6156
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 5684
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 4228
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 5092
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 5460
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 11290
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 21845
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 21477
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 8194
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 6156
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 10226
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 6156
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Sprites.enemy2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 8194
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12294
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 10698
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 9778
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 6156
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 5684
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 4644
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 4228
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 5588
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 3096
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 5092
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 4100
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 12294
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 24125
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 20933
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 11834
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Sprites.grain1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 240
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 304
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 592
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 1168
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 1312
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 1600
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 1920
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Sprites.grain2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 1920
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 1600
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 1312
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 1168
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 592
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 304
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 240
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Sprites.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

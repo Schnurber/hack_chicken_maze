@@ -1,0 +1,91 @@
+/*
+ * Tools class, which provides pseudo-random numbers for the movement sequences 
+ * of the enemies
+ */
+class Tools {
+
+	field Array r1, r2, r3, r4;
+	field int p1, p2, p3, p4;
+
+	constructor Tools new() {
+		let r1 = Array.new(5);
+		let r1[0] = 0;
+		let r1[1] = 1;
+		let r1[2] = 1;
+		let r1[3] = 0;
+		let r1[4] = 1;
+		let r2 = Array.new(5);
+		let r2[0] = 0;
+		let r2[1] = 1;
+		let r2[2] = 0;
+		let r2[3] = 2;
+		let r2[4] = 1;
+
+		let r3 = Array.new(5);
+		let r3[0] = 1;
+		let r3[1] = 0;
+		let r3[2] = 2;
+		let r3[3] = 3;
+		let r3[4] = 1;
+
+		let r4 = Array.new(5);
+		let r4[0] = 4;
+		let r4[1] = 0;
+		let r4[2] = 2;
+		let r4[3] = 3;
+		let r4[4] = 1;
+
+		let p1 = 0;
+		let p2 = 0;
+		let p3 = 0;
+		let p4 = 0;
+		return this;
+	}
+	
+	  /**
+	   * Function that returns a random number for a given level
+	   */
+	  method int random(int m) {
+
+	    if (m = 1) {
+	    	let p1 = p1 + 1;
+		    if (p1 > 4) {
+		    	let p1 = 0;
+		    }
+	    	return r1[p1];
+	    }
+
+	    if (m = 2) {
+	    	let p2 = p2 + 1;
+		    if (p2 > 4) {
+		    	let p2 = 0;
+		    }
+	    	return r2[p2];
+	    }
+
+	    if (m = 3) {
+	    	let p3 = p3 + 1;
+		    if (p3 > 4) {
+		    	let p3 = 0;
+		    }
+	    	return r3[p3];
+	    }
+
+	    if (m = 4) {
+	    	let p4 = p4 + 1;
+		    if (p4 > 4) {
+		    	let p4 = 0;
+		    }
+	    	return r4[p4];
+	    }
+
+	    return 0;
+	  }
+
+
+	method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+   }
+
+}

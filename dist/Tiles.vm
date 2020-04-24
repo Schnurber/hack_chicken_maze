@@ -1,0 +1,1938 @@
+function Tiles.ground1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 1024
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 2
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 2048
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 8193
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.ground2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 16384
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 32
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 128
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.ground3 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 2
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 256
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.corner1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 8
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 12
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 268
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 8220
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 268
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 30708
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 44
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 4084
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 4684
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.corner2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 8191
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 12288
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 10237
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12031
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12271
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 12031
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 10231
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12285
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 12255
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 12272
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 11767
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.corner3 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 12279
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 11120
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12031
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12283
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 11263
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 11999
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 12279
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12159
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 12288
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 8191
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.corner4 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 4108
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 2932
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 268
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 8204
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 300
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 30708
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 140
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 4
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.t1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 259
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 8209
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 257
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 30711
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 3
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 33
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 4080
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 4681
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.t2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 12279
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 11120
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12031
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12283
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 11263
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 11999
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 12279
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12159
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 11760
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 12151
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 11764
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.t3 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 4105
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 2928
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 257
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 8197
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 289
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 30711
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 129
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.t4 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 4108
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 2932
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 268
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 8204
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 300
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 30708
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 1036
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 4052
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 4108
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 11700
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.cross 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 4105
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 7032
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 4353
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 5
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 1025
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 16673
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 9
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 4225
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 7672
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 4233
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 11764
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.wallh 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 2053
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 265
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 8193
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 67
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.wallv 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12244
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 11764
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12020
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 11252
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 11988
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 10100
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 11252
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 12020
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 12244
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.cap1 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 8184
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 8196
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12020
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 11252
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 11988
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12148
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 11764
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 12148
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 11764
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.cap2 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 8191
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 12288
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12031
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12278
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 11263
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 11999
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12151
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12287
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 12288
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 8191
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.cap3 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 12212
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 11252
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 12244
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 12020
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 11252
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 11988
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 12148
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12276
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 12300
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 8184
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.cap4 1
+push constant 16384
+push argument 0
+add
+pop local 0
+push local 0
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+add
+push constant 8
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+add
+push constant 12
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 128
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 16652
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 192
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 224
+add
+push constant 1036
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 256
+add
+push constant 300
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 288
+add
+push constant 32756
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 320
+add
+push constant 2188
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 352
+add
+push constant 12
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 384
+add
+push constant 12
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 416
+add
+push constant 8
+neg
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Tiles.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return
